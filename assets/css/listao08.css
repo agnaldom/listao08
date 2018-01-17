@@ -1,12 +1,98 @@
+@import url("font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 /* Intro */
 body {
+  position:relative;
+  width:100%;
+  height:auto;
+  padding-top:8rem;
+  padding-bottom:8rem;
 	background: url('../images/bg.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	font-family: "Open Sans", Helvetica, sans-serif, arial; 
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 22px;
+	text-align: left;
+	text-shadow:1px 1px 0px #fff; 
 }
 
-.container{
-	padding: 25px;
+.center {
+	margin: 0 auto; 
+	width: 1200px;
+}
+
+/*.clearfix usado para adicionar um espaço vazio antes e depois dos elementos
+  evitando que os floats se aglomerem.
+*/
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after{
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+img, picture, video, embed {
+	max-width: 100%; 
+}
+
+h1, h2{
+	color:#FE9380;
+	font-size: 60px;
+	font-weight: 800;
+	letter-spacing: -3px;
+	line-height: 60px;
+}
+
+h3{
+	font-size: 32px;
+	font-weight: 300;
+	letter-spacing: -2px; 
+	line-height: 38px;
+}
+
+p{
+	font-weight: 300;
+	letter-spacing: -1px; 
+}
+a, a:link, a:visited{
+	color:#FE9380;
+	font-weight:400; 
+	text-decoration:none; 
+}
+a:hover{
+	color:#FE5E41;
+	text-decoration:underline; 
+	text-shadow:none;
+}
+
+html, body {
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+	height: 100%;
+}
+
+.footer {
+	position: relative;
+	height: 4em;
+	line-height: 3em;
+	margin: 0;
+	background: #ff712d;
+	color: rgba(185, 186, 187, 0.5);
+	overflow: hidden;
 }
